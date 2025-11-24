@@ -2,12 +2,12 @@ import { exportPages } from "next/dist/export/worker"
 import { createContext, useContext, useState, ReactNode } from "react"
 
 interface CounterContextProps {
-    count: number 
-    increment: () => void
-    decrement: () => void
+    count: number;
+    increment: () => void;
+    decrement: () => void;
 }
 
-export const CountContext = createContext<CountContextProps | undefined>
+export const CountContext = createContext<CounterContextProps | undefined>
 (undefined)
 
 export const CountProvider = ({ children }:{ children: ReactNode}) => {
